@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fsm>
+  <states>
+    <state>
+      <values>VIP_OK=0</values>
+      <position x="-180.0" y="-180.0"/>
+      <number>0</number>
+      <name>START</name>
+      <radius>70</radius>
+      <isInitial>true</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>VIP_OK=0</values>
+      <position x="180.0" y="0.0"/>
+      <number>1</number>
+      <name>WPISANO 1</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>VIP_OK=0</values>
+      <position x="120.0" y="360.0"/>
+      <number>2</number>
+      <name>WPISANO 11</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>VIP_OK=0</values>
+      <position x="-300.0" y="420.0"/>
+      <number>3</number>
+      <name>WPISANO 110</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>VIP_OK=1</values>
+      <position x="-480.0" y="60.0"/>
+      <number>4</number>
+      <name>WPISANO 1101</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+  </states>
+  <transitions>
+    <transition>
+      <values></values>
+      <position x="53.190582" y="-196.38116"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="195.30841" y="187.5514"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-83.56667" y="435.0333"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[4]"/>
+      <condition>~BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-445.07318" y="267.5366"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state[5]"/>
+      <condition>BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-372.7132" y="-113.39148"/>
+      <fromState reference="../../../states/state[5]"/>
+      <toState reference="../../../states/state"/>
+      <condition>~BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-1.6655885" y="-86.66882"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state"/>
+      <condition>~BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="216.32686" y="471.06274"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-261.69733" y="115.66054"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state"/>
+      <condition>~BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-149.2492" y="38.258774"/>
+      <fromState reference="../../../states/state[5]"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>BTN</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-142.0" y="-353.0"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state"/>
+      <condition>~BTN</condition>
+    </transition>
+  </transitions>
+</fsm>
